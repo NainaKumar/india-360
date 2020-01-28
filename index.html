@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Travel Guide</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">India360</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="qna.html">QnA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width: 100%;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(16).jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(17).jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="card-body">
+                    <div class="text-center">
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select City
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Goa</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Bangalore</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Jaipur</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Gurgaon</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Udaipur</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Gangtok</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Kanyakumari</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Lucknow</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Shimla</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLoginForm">Kolkata</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/lucknow1.jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">City of Nawabs-Lucknow</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/lucknow2.jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">City of Nawabs-Lucknow</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/lucknow3.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">City of Nawabs-Lucknow</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/lucknow4.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">City of Nawabs-Lucknow</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/lucknow5.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">City of Nawabs-Lucknow</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/shimla1.jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Summer Capital of India-Shimla</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/shimla2.jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Summer Capital of India-Shimla</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/shimla3.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Summer Capital of India-Shimla</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/shimla4.jpeg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Summer Capital of India-Shimla</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/shimla5.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Summer Capital of India-Shimla</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/goa1.jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Rome of the East-Goa</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/goa2.jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Rome of the East-Goa</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/goa3.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Rome of the East-Goa</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/goa4.jpeg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Rome of the East-Goa</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/goa5.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Rome of the East-Goa</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/kolkata1.jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Cultural Capital of India-Kolkata</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/kolkata2.jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Cultural Capital of India-Kolkata</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/kolkata3.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Cultural Capital of India-Kolkata</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/kolkata4.jpeg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Cultural Capital of India-Kolkata</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/kolkata5.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Cultural Capital of India-Kolkata</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/jaipur1.jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Paris of India-Jaipur</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/jaipur2.jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Paris of India-Jaipur</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/jaipur3.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Paris of India-Jaipur</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/jaipur4.jpeg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Paris of India-Jaipur</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <div class="view">
+                                <img class="img-fluid max-width: 100%; plus height: auto;" src="images/jaipur5.jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h5 class="h3-responsive">Paris of India-Jaipur</h5>
+                                <!-- <p>Place</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card default-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/goa.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Goa</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Need a break? Let's relax on the warm sand and cool breeze on the beaches of goa.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/gurgao.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Gurgaon</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">How did vehicles evolved? No idea! Come and visit 'Heritage Trasport Museum' to know about the evolution of vehicles at Gurugram.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/kanyakumari.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Kanyakumari</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Haven't seen the beautiful view of sunrise and sunset over waters? Then pack your bags and come to feel close to the nature.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card default-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/kolkata.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Kolkata</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Do you know jhal muri,puchka,singara,kachauri and telebhaja? No! Then why waiting come to get the real taste of street food in Kolkata.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/lucknow.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Lucknow</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">What's the real mughlai food? Or wanna know about the pure chickankari work? So come and visit the place of Nawabs.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/shimla.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Shimla</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Nature lovers here's the call! Come see the beauty by God.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card default-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/udaipur.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Udaipur</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Do you like handicrafts and Rajasthani souvenirs? Then collect the stuff to bring the feel of Rajasthani culture in your home.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/gangtok.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Gangtok</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Bring back the child in you by partaking in fun activities at Gangtok.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card primary-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/bangalore.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Banglore</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">The fashion capital of India. Great collection of silk sarees and contemporary clothes. Come and get great stuff to add to your wardrobe.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card default-color-dark">
+
+                        <!--Card image-->
+                        <div class="view">
+                            <img src="images/jaipur.jpg" class="card-img-top" alt="photo">
+                            <a href="#">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body text-center">
+                            <!--Title-->
+                            <h4 class="card-title white-text">Jaipur</h4>
+                            <!--Text-->
+                            <p class="card-text white-text">Luxury ideas under minimum budget for you.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <div class="col-md-3">
+            <img class="card-img-top" src="cat.gif" alt="Card image cap">
+            <!-- Card Light -->
+            <div class="card">
+
+                <!-- Card image -->
+                <div class="view overlay">
+                    <img class="card-img-top" src="offer.jpg" alt="Card image cap">
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body">
+
+                    <hr>
+                    <!-- Text -->
+                    <h4 class="card-text">Play and Win exciting prizes and upto 50% off on bookings.</h4>
+                    <!-- Link -->
+                    <a href="#" class="black-text d-flex justify-content-end" data-toggle="modal" data-target="#modalLoginForm">
+                        <h5>Attempt Quiz<i class="fas fa-angle-double-right"></i></h5>
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- Card Light -->
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Login to explore about city!!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                        <input type="password" id="defaultForm-pass" class="form-control validate">
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="logged.html"><button class="btn btn-default" >Login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Travel Guide</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        /* Change the link color on hover */
+        
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">India360</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="logged.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">QnA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="index.html">logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/.Navbar -->
+
+    <div class="container">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100" src="images/kanyakumari3.jpg" alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Kanyakumari</h3>
+                        <p>Place</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="images/kanyakumari 2.jpg" alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Kanyakumari</h3>
+                        <p>Place</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="images/kanya1.jpg" alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Kanyakumari</h3>
+                        <p>Place</p>
+                    </div>
+                </div>
+            </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+    <br>
+    <div class="container">
+        <!--Accordion wrapper-->
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+            <!-- Accordion card -->
+            <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h5 class="mb-0">
+                            About the City
+                            <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                        </h5>
+                    </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                    <div class="card-body">
+                        Kanyakumari is a city of the Kanyakumari district in the Indian State of Tamil Nadu. It is the southernmost city of peninsular India. Kanyakumari has been a city since the Sangam period and is a popular tourist destination.
+                        <br> The state owned Poompuhar Shipping Corporation runs ferry services between the town an the Vivekanand Rock Memorial and Thiruvalluvar statue, situated on a rocky islets off the coast. Kanyakumari is directly connected by rail
+                        with almost all metropolitan cities in India. The nearest airport is Thiruvananthapuram International Airport 90 km from Kanyakumari Town and 70 km from Nagercoli.</div>
+                </div>
+
+            </div>
+            <!-- Accordion card -->
+
+            <!-- Accordion card -->
+            <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                        <h5 class="mb-0">
+                            Places to Visit
+                            <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                        </h5>
+                    </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                    <div class="card-body">
+                        1. Vivekanand Rock Memorial
+                        <br> 2. Thiruvalluvar Statue
+                        <br> 3. Kanyakumari Beach
+                        <br> 4. Mahatma Gandhi Mandapam
+                        <br> 5. Our Lady Of Ransom Church
+                        <br> 6. Sarvani Shaktipeeth Shri Bhagavathy Temple
+                    </div>
+                </div>
+
+            </div>
+            <!-- Accordion card -->
+
+            <!-- Accordion card -->
+            <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingThree3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                        <h5 class="mb-0">
+                            Seasons to visit
+                            <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                        </h5>
+                    </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                    <div class="card-body">
+                        The months from October until February are considered the best time to visit Kanyakumari, as the weather remains calm and pleasant.
+                    </div>
+                </div>
+
+            </div>
+            <!-- Accordion card -->
+
+
+            <!-- Accordion card -->
+            <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingfour4">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapsefour4" aria-expanded="false" aria-controls="collapsefour4">
+                        <h5 class="mb-0">
+                            Packing tips
+                            <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                        </h5>
+                    </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapsefour4" class="collapse" role="tabpanel" aria-labelledby="headingfour4" data-parent="#accordionEx">
+                    <div class="card-body">
+                        When you step out of the house, the first thing you look for is comfort. Make sure you carry a few comfy clothes that you can relax in. Place comfort over fashion. The same goes for footwear.
+                        <br> Never ever wear any footwear which is difficult to open in Kanyakumari like snekers or other shoes. Every place you visit, you have to open your shoes even in museum.
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingfive5">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapsefive5" aria-expanded="false" aria-controls="collapsefive5">
+                            <h5 class="mb-0">
+                                Hotels you can book
+                                <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapsefive5" class="collapse" role="tabpanel" aria-labelledby="headingfive5" data-parent="#accordionEx">
+                        <div class="card-body">
+                            More choices, lowest prices, secure and easy to book only on INDIA360.
+                            <br> Book now!
+                            <br> Special deals for travel.
+                            <br> 24x7 customer service.
+                            <br> Lowest price guaranteed.
+                            <br> *Sparsa
+                            <br> *Hotel Sivamurugan
+                            <br> *Hotel Sangam
+                            <br>
+                            <a href="https://www.oyorooms.com"><img src="icons/OYO.png" width="180" height="150"></a>
+                            <a href="https://www.trivago.com"><img src="icons/trivago.png" width="220" height="120"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingsix6">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapsesix6" aria-expanded="false" aria-controls="collapsesix6">
+                            <h5 class="mb-0">
+                                Languages
+                                <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapsesix6" class="collapse" role="tabpanel" aria-labelledby="headingsix6" data-parent="#accordionEx">
+                        <div class="card-body">
+                            Language is a system that consist of development, acquisition, maintenance and use of complex system of communication, particularly the human ability to do so.
+                            <br> Most of the people speak in Tamil an Malayalam in Kanyakumari. Though in Urban areas people understand English.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header" role="tab" id="headingsever7">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapsesever7" aria-expanded="false" aria-controls="collapsesever7">
+                            <h5 class="mb-0">
+                                Transport
+                                <div class="float-right"><i class="fas fa-angle-down rotate-icon"></i></div>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapsesever7" class="collapse" role="tabpanel" aria-labelledby="headingsever7" data-parent="#accordionEx">
+                        <div class="card-body">
+                            Buses, flights and trains!
+                            <br> What's your little favourite transportation system ?
+                            <br> There are many modes of transportation that allow us to move from one part of the world to another, and learning about them is one of the first things that little ones do as soon as they start communicating with their
+                            families.
+                            <br> Here are the links from which you can book to experience the beauty of the journey.
+                            <br><br>
+                            <a href="https://www.trivago.com"><img src="icons/trivago.png" width="220" height="120"></a>
+                            <a href="https://www.irctc.co.in"><img src="icons/irctc.png" width="220" height="220"></a>
+                            <a href="https://m.redbus.in"><img src="icons/redbus.jpg" width="220" height="120"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+
+
+
+            </div>
+            <!-- Accordion wrapper -->
+        </div>
+
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
